@@ -1,11 +1,14 @@
 {
   "name": "booktonica",
   "version": "1.0.0",
+  "engines": {
+    "node": "13.7.x"
+  },
   "description": "Booktonica is a full-stack app displaying collection of books from Techtonica's curriculum. Users can view books as well as books from a specfic list.",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "heroku-postbuild": "cd react-client && npm install && npm run build",
+    "heroku-postbuild": "cd react-app && npm install && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Tahshara",
