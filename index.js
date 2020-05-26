@@ -18,7 +18,7 @@ const dbName = process.env.DB_NAME || DEFAULT_DB_NAME;
 const db = new BooktonicaDatabase(dbName);
 
 const api = express();
-api.use(cors())
+api.use(express.static(path.join(__dirname, 'react-app/build')));
 
 // Middlewares
 api.use(morgan('tiny'));
