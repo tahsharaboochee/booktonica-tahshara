@@ -125,7 +125,6 @@ const pgp = require('pg-promise')();
       );
     }
 
-
     getListBooksBelongTo(id){
       return this.db.any(
         `SELECT 
@@ -138,9 +137,6 @@ const pgp = require('pg-promise')();
         WHERE bl.book_id =$1`, [id]
       )
     }
-
-    
-
 }
 
 
